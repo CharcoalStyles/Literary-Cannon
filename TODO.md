@@ -5,12 +5,12 @@
       * [x] Load once into a Map<String,Bool> (Assets.getText);
     * [x] Tile data
       * [x] Letter frequency + point value table
-  * [ ] Battle model (no UI, just data in PlayState)
-    * [ ] Letter "bag": shuffled array of all tiles;
-    * [ ] Letter discard: array of tiles used
-    * [ ] Hand: 8 tiles, refill to 8 after each play/discard
-    * [ ] Player HP / enemy HP (e.g. 30 / 40)
-    * [ ] Turn state: PLAYER -> ENEMY -> PLAYER ... -> WIN / LOSE
+  * [x] Battle model (no UI, just data in PlayState)
+    * [x] Letter "bag": shuffled array of all tiles;
+    * [x] Letter discard: array of tiles used
+    * [x] Hand: 8 tiles, refill to 8 after each play/discard
+    * [x] Player HP / enemy HP (e.g. 30 / 40)
+    * [x] Turn state: PLAYER -> ENEMY -> PLAYER ... -> WIN / LOSE
   * [ ] Basic UI (rectangles + FlxText, placeholder layout)
     * [ ] HP bars/labels for player and enemy
     * [ ] Letter hand (row of clickable tile boxes showing letter + points)

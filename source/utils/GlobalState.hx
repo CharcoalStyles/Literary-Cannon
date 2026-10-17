@@ -36,7 +36,7 @@ class GlobalState extends FlxBasic
 			}
 		}
 
-		playerDetails = new PlayerDetails("Player", 10, 10, userLetters);
+		playerDetails = new PlayerDetails("Player", 25, 25, userLetters);
 		dictionary = new Map<String, Bool>();
 		for (word in Assets.getText("assets/data/words.txt").split("\n"))
 		{
