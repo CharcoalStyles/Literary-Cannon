@@ -3642,7 +3642,7 @@ openfl_display_Sprite.prototype = $extend(openfl_display_DisplayObjectContainer.
 var Main = function() {
 	openfl_display_Sprite.call(this);
 	this.addChild(new flixel_FlxGame(0,0,flixel_util_typeLimit_InitialState.fromMaker(function() {
-		return new states_FlxCstyLogo(new states_MainMenuState());
+		return new states_MainMenuState();
 	})));
 };
 $hxClasses["Main"] = Main;
@@ -3877,7 +3877,7 @@ ManifestResources.init = function(config) {
 	openfl_text_Font.registerFont(_$_$ASSET_$_$OPENFL_$_$flixel_$fonts_$nokiafc22_$ttf);
 	openfl_text_Font.registerFont(_$_$ASSET_$_$OPENFL_$_$flixel_$fonts_$monsterrat_$ttf);
 	var bundle;
-	var data = "{\"name\":null,\"assets\":\"aoy4:pathy34:assets%2Fdata%2Fdata-goes-here.txty4:sizezy4:typey4:TEXTy2:idR1y7:preloadtgoR0y36:assets%2Fmusic%2Fmusic-goes-here.txtR2zR3R4R5R7R6tgoR0y36:assets%2Fsounds%2Fsounds-go-here.txtR2zR3R4R5R8R6tgoR0y36:assets%2Fimages%2Fimages-go-here.txtR2zR3R4R5R9R6tgoR0y26:assets%2Fimages%2Fcsty.pngR2i271R3y5:IMAGER5R10R6tgoR2i39706R3y5:MUSICR5y28:flixel%2Fsounds%2Fflixel.mp3y9:pathGroupaR13y28:flixel%2Fsounds%2Fflixel.ogghR6tgoR2i8220R3R12R5y26:flixel%2Fsounds%2Fbeep.mp3R14aR16y26:flixel%2Fsounds%2Fbeep.ogghR6tgoR2i33629R3y5:SOUNDR5R15R14aR13R15hgoR2i6840R3R18R5R17R14aR16R17hgoR2i15744R3y4:FONTy9:classNamey35:__ASSET__flixel_fonts_nokiafc22_ttfR5y30:flixel%2Ffonts%2Fnokiafc22.ttfR6tgoR2i29724R3R19R20y36:__ASSET__flixel_fonts_monsterrat_ttfR5y31:flixel%2Ffonts%2Fmonsterrat.ttfR6tgoR0y33:flixel%2Fimages%2Fui%2Fbutton.pngR2i222R3R11R5R25R6tgoR0y36:flixel%2Fimages%2Flogo%2Fdefault.pngR2i484R3R11R5R26R6tgoR0y43:flixel%2Fimages%2Ftransitions%2Fdiamond.pngR2i236R3R11R5R27R6tgoR0y42:flixel%2Fimages%2Ftransitions%2Fcircle.pngR2i299R3R11R5R28R6tgoR0y53:flixel%2Fimages%2Ftransitions%2Fdiagonal_gradient.pngR2i730R3R11R5R29R6tgoR0y42:flixel%2Fimages%2Ftransitions%2Fsquare.pngR2i209R3R11R5R30R6tgh\",\"rootPath\":null,\"version\":2,\"libraryArgs\":[],\"libraryType\":null}";
+	var data = "{\"name\":null,\"assets\":\"aoy4:pathy34:assets%2Fdata%2Fdata-goes-here.txty4:sizezy4:typey4:TEXTy2:idR1y7:preloadtgoR0y25:assets%2Fdata%2Fwords.txtR2i4234910R3R4R5R7R6tgoR0y28:assets%2Fdata%2Fletters.jsonR2i1167R3R4R5R8R6tgoR0y36:assets%2Fmusic%2Fmusic-goes-here.txtR2zR3R4R5R9R6tgoR0y36:assets%2Fsounds%2Fsounds-go-here.txtR2zR3R4R5R10R6tgoR0y36:assets%2Fimages%2Fimages-go-here.txtR2zR3R4R5R11R6tgoR0y26:assets%2Fimages%2Fcsty.pngR2i271R3y5:IMAGER5R12R6tgoR2i39706R3y5:MUSICR5y28:flixel%2Fsounds%2Fflixel.mp3y9:pathGroupaR15y28:flixel%2Fsounds%2Fflixel.ogghR6tgoR2i8220R3R14R5y26:flixel%2Fsounds%2Fbeep.mp3R16aR18y26:flixel%2Fsounds%2Fbeep.ogghR6tgoR2i33629R3y5:SOUNDR5R17R16aR15R17hgoR2i6840R3R20R5R19R16aR18R19hgoR2i15744R3y4:FONTy9:classNamey35:__ASSET__flixel_fonts_nokiafc22_ttfR5y30:flixel%2Ffonts%2Fnokiafc22.ttfR6tgoR2i29724R3R21R22y36:__ASSET__flixel_fonts_monsterrat_ttfR5y31:flixel%2Ffonts%2Fmonsterrat.ttfR6tgoR0y33:flixel%2Fimages%2Fui%2Fbutton.pngR2i222R3R13R5R27R6tgoR0y36:flixel%2Fimages%2Flogo%2Fdefault.pngR2i484R3R13R5R28R6tgoR0y43:flixel%2Fimages%2Ftransitions%2Fdiamond.pngR2i236R3R13R5R29R6tgoR0y42:flixel%2Fimages%2Ftransitions%2Fcircle.pngR2i299R3R13R5R30R6tgoR0y53:flixel%2Fimages%2Ftransitions%2Fdiagonal_gradient.pngR2i730R3R13R5R31R6tgoR0y42:flixel%2Fimages%2Ftransitions%2Fsquare.pngR2i209R3R13R5R32R6tgh\",\"rootPath\":null,\"version\":2,\"libraryArgs\":[],\"libraryType\":null}";
 	var manifest = lime_utils_AssetManifest.parse(data,ManifestResources.rootPath);
 	var library = lime_utils_AssetLibrary.fromManifest(manifest);
 	lime_utils_Assets.registerLibrary("default",library);
@@ -88820,7 +88820,7 @@ var lime_utils_AssetCache = function() {
 	this.audio = new haxe_ds_StringMap();
 	this.font = new haxe_ds_StringMap();
 	this.image = new haxe_ds_StringMap();
-	this.version = 95273;
+	this.version = 587934;
 };
 $hxClasses["lime.utils.AssetCache"] = lime_utils_AssetCache;
 lime_utils_AssetCache.__name__ = "lime.utils.AssetCache";
@@ -140675,14 +140675,49 @@ states_MainMenuState.prototype = $extend(flixel_FlxState.prototype,{
 	}
 	,__class__: states_MainMenuState
 });
+var states_Play_$State = $hxEnums["states.Play_State"] = { __ename__:"states.Play_State",__constructs__:null
+	,Intro: {_hx_name:"Intro",_hx_index:0,__enum__:"states.Play_State",toString:$estr}
+	,PlayerTurnInit: {_hx_name:"PlayerTurnInit",_hx_index:1,__enum__:"states.Play_State",toString:$estr}
+	,PlayerTurn: {_hx_name:"PlayerTurn",_hx_index:2,__enum__:"states.Play_State",toString:$estr}
+	,PlayerAction: {_hx_name:"PlayerAction",_hx_index:3,__enum__:"states.Play_State",toString:$estr}
+	,EnemyTurn: {_hx_name:"EnemyTurn",_hx_index:4,__enum__:"states.Play_State",toString:$estr}
+	,End: {_hx_name:"End",_hx_index:5,__enum__:"states.Play_State",toString:$estr}
+};
+states_Play_$State.__constructs__ = [states_Play_$State.Intro,states_Play_$State.PlayerTurnInit,states_Play_$State.PlayerTurn,states_Play_$State.PlayerAction,states_Play_$State.EnemyTurn,states_Play_$State.End];
 var states_PlayState = function() {
+	this.enemyAttack = 6;
+	this.enemyHp = 40;
+	this.currentHandLimit = 8;
+	this.currentHand = [];
+	this.letterDiscard = [];
+	this.letterBag = [];
 	flixel_FlxState.call(this);
+	this.globalState = flixel_FlxG.plugins.get(utils_GlobalState);
+	var _g = 0;
+	var _g1 = this.globalState.playerDetails.tileBag;
+	while(_g < _g1.length) {
+		var letter = _g1[_g];
+		++_g;
+		this.letterBag.push(letter);
+	}
+	flixel_FlxG.random.shuffle(this.letterBag);
+	this.currentState = states_Play_$State.Intro;
+	this.transitionCountdown = 10;
 };
 $hxClasses["states.PlayState"] = states_PlayState;
 states_PlayState.__name__ = "states.PlayState";
 states_PlayState.__super__ = flixel_FlxState;
 states_PlayState.prototype = $extend(flixel_FlxState.prototype,{
 	globalState: null
+	,letterBag: null
+	,letterDiscard: null
+	,currentHand: null
+	,currentHandLimit: null
+	,currentState: null
+	,nextState: null
+	,transitionCountdown: null
+	,enemyHp: null
+	,enemyAttack: null
 	,create: function() {
 		flixel_FlxState.prototype.create.call(this);
 		flixel_FlxG.mouse.set_visible(true);
@@ -140692,6 +140727,42 @@ states_PlayState.prototype = $extend(flixel_FlxState.prototype,{
 	,update: function(elapsed) {
 		var _gthis = this;
 		flixel_FlxState.prototype.update.call(this,elapsed);
+		if(this.nextState != null) {
+			this.currentState = this.nextState;
+			this.nextState = null;
+		}
+		switch(this.currentState._hx_index) {
+		case 0:
+			this.transitionCountdown -= elapsed;
+			if(this.transitionCountdown <= 0) {
+				this.nextState = states_Play_$State.PlayerTurnInit;
+			}
+			break;
+		case 1:
+			if(this.currentHand.length < this.currentHandLimit) {
+				var difference = this.currentHandLimit - this.currentHand.length;
+				var _g = 0;
+				var _g1 = difference;
+				while(_g < _g1) {
+					var i = _g++;
+					this.currentHand.push(this.letterBag.shift());
+				}
+			}
+			this.nextState = states_Play_$State.PlayerTurn;
+			break;
+		case 2:
+			this.nextState = states_Play_$State.PlayerAction;
+			break;
+		case 3:
+			this.nextState = states_Play_$State.EnemyTurn;
+			break;
+		case 4:
+			this.nextState = states_Play_$State.End;
+			break;
+		case 5:
+			this.transitionCountdown = 0;
+			break;
+		}
 		var _this = flixel_FlxG.keys.justPressed;
 		if(_this.keyManager.checkStatusUnsafe(27,_this.status)) {
 			this.subState = new states_subStates_PauseState(this.globalState.controllerId);
@@ -140750,6 +140821,33 @@ var utils_GlobalState = function() {
 	this.isUsingController = false;
 	flixel_FlxBasic.call(this);
 	this.emitter = new csHxUtils_entities_CsEmitter();
+	var lettersData = openfl_utils_Assets.getText("assets/data/letters.json");
+	var lettersObj = JSON.parse(lettersData);
+	var userLetters = [];
+	var h = lettersObj.h;
+	var letter_h = h;
+	var letter_keys = Object.keys(h);
+	var letter_length = letter_keys.length;
+	var letter_current = 0;
+	while(letter_current < letter_length) {
+		var letter = letter_keys[letter_current++];
+		var data = Reflect.field(lettersObj,letter);
+		var _g = 0;
+		var _g1 = lettersObj.h[letter].initialCount;
+		while(_g < _g1) {
+			var i = _g++;
+			userLetters.push(new utils_LetterDetails(letter,data.points));
+		}
+	}
+	this.playerDetails = new utils_PlayerDetails("Player",25,25,userLetters);
+	this.dictionary = new haxe_ds_StringMap();
+	var _g = 0;
+	var _g1 = openfl_utils_Assets.getText("assets/data/words.txt").split("\n");
+	while(_g < _g1.length) {
+		var word = _g1[_g];
+		++_g;
+		this.dictionary.h[word] = true;
+	}
 };
 $hxClasses["utils.GlobalState"] = utils_GlobalState;
 utils_GlobalState.__name__ = "utils.GlobalState";
@@ -140758,11 +140856,43 @@ utils_GlobalState.prototype = $extend(flixel_FlxBasic.prototype,{
 	isUsingController: null
 	,controllerId: null
 	,emitter: null
+	,playerDetails: null
+	,dictionary: null
 	,createEmitter: function() {
 		this.emitter = new csHxUtils_entities_CsEmitter();
 	}
 	,__class__: utils_GlobalState
 });
+var utils_LetterDetails = function(letter,points) {
+	this.letter = letter;
+	this.points = points;
+};
+$hxClasses["utils.LetterDetails"] = utils_LetterDetails;
+utils_LetterDetails.__name__ = "utils.LetterDetails";
+utils_LetterDetails.prototype = {
+	letter: null
+	,points: null
+	,__class__: utils_LetterDetails
+};
+var utils_PlayerDetails = function(name,hp,maxHp,tileBag) {
+	this.name = name;
+	this.hp = hp;
+	this.baseMaxHp = maxHp;
+	this.tileBag = tileBag;
+};
+$hxClasses["utils.PlayerDetails"] = utils_PlayerDetails;
+utils_PlayerDetails.__name__ = "utils.PlayerDetails";
+utils_PlayerDetails.prototype = {
+	name: null
+	,hp: null
+	,baseMaxHp: null
+	,tileBag: null
+	,get_maxHp: function() {
+		return this.baseMaxHp;
+	}
+	,__class__: utils_PlayerDetails
+	,__properties__: {get_maxHp:"get_maxHp"}
+};
 function $getIterator(o) { if( o instanceof Array ) return new haxe_iterators_ArrayIterator(o); else return o.iterator(); }
 function $getKeyValueIterator(o) { if( o instanceof Array ) return HxOverrides.keyValueIter(o); else return o.keyValueIterator(); }
 function $bind(o,m) { if( m == null ) return null; if( m.__id__ == null ) m.__id__ = $global.$haxeUID++; var f; if( o.hx__closures__ == null ) o.hx__closures__ = {}; else f = o.hx__closures__[m.__id__]; if( f == null ) { f = m.bind(o); o.hx__closures__[m.__id__] = f; } return f; }
