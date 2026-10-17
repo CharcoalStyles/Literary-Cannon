@@ -10,7 +10,7 @@ import utils.GlobalState;
 
 class MainMenuState extends FlxState
 {
-	var gameName:String = "Game";
+	var gameName:String = "Literary Cannon";
 	var globalState:GlobalState;
 
 	override public function create()

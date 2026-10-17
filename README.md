@@ -1,4 +1,4 @@
-# Game Title
+# Literary Cannon
 
 Game Description
 
@@ -8,5 +8,5 @@ Game Description
 
 ## How to play
 
-- [Click here to play](https://charcoalstyles.github.io/{repository-name}/)
+- [Click here to play](https://charcoalstyles.github.io/Literary-Cannon/)
 
