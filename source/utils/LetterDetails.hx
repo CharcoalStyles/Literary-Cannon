@@ -1,6 +1,6 @@
 package utils;
 
-class TileDetails
+class LetterDetails
 {
 	public var letter:String;
 	public var points:Int;
@@ -10,5 +10,4 @@ class TileDetails
 		this.letter = letter;
 		this.points = points;
 	}
-
 }

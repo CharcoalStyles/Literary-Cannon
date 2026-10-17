@@ -9,6 +9,8 @@ class PlayState extends FlxState
 {
 	var globalState:GlobalState;
 
+  var letterBag:Array<
+
 	public function new()
 	{
 		super();

@@ -26,13 +26,13 @@ class GlobalState extends FlxBasic
 
 		var lettersData = Assets.getText("assets/data/letters.json");
 		var lettersObj:Map<String, LetterData> = haxe.Json.parse(lettersData);
-		var userLetters:Array<TileDetails> = [];
+		var userLetters:Array<LetterDetails> = [];
 		for (letter in lettersObj.keys())
 		{
 			var data:LetterData = Reflect.field(lettersObj, letter);
 			for (i in 0...lettersObj[letter].initialCount)
 			{
-				userLetters.push(new TileDetails(letter, data.points));
+				userLetters.push(new LetterDetails(letter, data.points));
 			}
 		}
 
