@@ -1,10 +1,10 @@
-* Battle Game (lo-fi vertical slice)
-  * [ ] Setup
-    * [ ] Basic dictionary
-      * [ ] Drop a word list in assets/data/words.txt (one word per line, uppercase, 3+ letters)
-      * [ ] Load once into a Map<String,Bool> (Assets.getText); `isWord(s)` helper
-    * [ ] Tile data
-      * [ ] Letter frequency + point value table (Scrabble distribution is fine to start)
+* [ ] Battle Game (lo-fi vertical slice)
+  * [x] Setup
+    * [x] Basic dictionary
+      * [x] Drop a word list in assets/data/words.txt
+      * [x] Load once into a Map<String,Bool> (Assets.getText);
+    * [x] Tile data
+      * [x] Letter frequency + point value table
   * [ ] Battle model (no UI, just data in PlayState)
     * [ ] Letter "bag": shuffled array of all tiles;
     * [ ] Letter discard: array of tiles used

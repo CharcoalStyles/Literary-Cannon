@@ -10,7 +10,7 @@
     }
   },
   "haxe.enableExtendedIndentation": true,
-  "lime.browser": "edge",
+  "lime.browser": "firefox",
   "editor.defaultFormatter": "nadako.vshaxe",
   "prettier.enable": false,
   "deno.enable": true,
@@ -19,5 +19,8 @@
     "editor.defaultFormatter": "denoland.vscode-deno"
   },
   "typescript.tsserver.experimental.enableProjectDiagnostics": false,
-  "CodeGPT.apiKey": "CodeGPT Plus Beta"
+  "CodeGPT.apiKey": "CodeGPT Plus Beta",
+  "cSpell.words": [
+    "haxe"
+  ]
 }
