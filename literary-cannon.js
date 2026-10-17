@@ -935,18 +935,18 @@ var ApplicationMain = function() { };
 $hxClasses["ApplicationMain"] = ApplicationMain;
 ApplicationMain.__name__ = "ApplicationMain";
 ApplicationMain.main = function() {
-	lime_system_System.__registerEntryPoint("game",ApplicationMain.create);
+	lime_system_System.__registerEntryPoint("literary-cannon",ApplicationMain.create);
 };
 ApplicationMain.create = function(config) {
 	var app = new openfl_display_Application();
 	ManifestResources.init(config);
 	app.meta.h["build"] = "1";
 	app.meta.h["company"] = "CharcoalStyles";
-	app.meta.h["file"] = "game";
-	app.meta.h["name"] = "Game";
+	app.meta.h["file"] = "literary-cannon";
+	app.meta.h["name"] = "Literary Cannon";
 	app.meta.h["packageName"] = "com.example.myapp";
 	app.meta.h["version"] = "0.0.1";
-	var attributes = { allowHighDPI : true, alwaysOnTop : false, borderless : false, element : null, frameRate : 60, height : 1080, hidden : false, maximized : false, minimized : false, parameters : { }, resizable : false, title : "Game", width : 1920, x : null, y : null};
+	var attributes = { allowHighDPI : true, alwaysOnTop : false, borderless : false, element : null, frameRate : 60, height : 1080, hidden : false, maximized : false, minimized : false, parameters : { }, resizable : false, title : "Literary Cannon", width : 1920, x : null, y : null};
 	attributes.context = { antialiasing : 0, background : 0, colorDepth : 32, depth : true, hardware : true, stencil : true, type : null, vsync : false};
 	if(app.__window == null) {
 		if(config != null) {
@@ -88820,7 +88820,7 @@ var lime_utils_AssetCache = function() {
 	this.audio = new haxe_ds_StringMap();
 	this.font = new haxe_ds_StringMap();
 	this.image = new haxe_ds_StringMap();
-	this.version = 252125;
+	this.version = 95273;
 };
 $hxClasses["lime.utils.AssetCache"] = lime_utils_AssetCache;
 lime_utils_AssetCache.__name__ = "lime.utils.AssetCache";
@@ -140593,7 +140593,7 @@ states_FlxCstyLogo.prototype = $extend(flixel_FlxState.prototype,{
 	,__class__: states_FlxCstyLogo
 });
 var states_MainMenuState = function() {
-	this.gameName = "Game";
+	this.gameName = "Literary Cannon";
 	flixel_FlxState.call(this);
 };
 $hxClasses["states.MainMenuState"] = states_MainMenuState;
@@ -144588,7 +144588,7 @@ ApplicationMain.main();
 	} else {
 		$hx_exports.lime = $hx_exports.lime || {};
 		$hx_exports.lime.$scripts = $hx_exports.lime.$scripts || {};
-		$hx_exports.lime.$scripts["game"] = $hx_script;
+		$hx_exports.lime.$scripts["literary-cannon"] = $hx_script;
 		$hx_exports.lime.embed = function (projectName) {
 			var exports = {};
 			var script = $hx_exports.lime.$scripts[projectName];
