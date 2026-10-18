@@ -24,6 +24,5 @@
   "w": { "points": 4, "initialCount": 2 },
   "x": { "points": 8, "initialCount": 1 },
   "y": { "points": 4, "initialCount": 2 },
-  "z": { "points": 10, "initialCount": 1 },
-  "_": { "points": 0, "initialCount": 2 }
+  "z": { "points": 10, "initialCount": 1 }
 }

@@ -13,16 +13,16 @@
     * [x] Turn state: PLAYER -> ENEMY -> PLAYER ... -> WIN / LOSE
   * [ ] Basic UI (rectangles + FlxText, placeholder layout)
     * [ ] HP bars/labels for player and enemy
-    * [ ] Letter hand (row of clickable tile boxes showing letter + points)
-    * [ ] Word work area (row where selected tiles appear, in order)
+    * [x] Letter hand (row of clickable tile boxes showing letter + points)
+    * [x] Word work area (row where selected tiles appear, in order)
     * [ ] Bag counter ("Bag: 43")
     * [ ] Buttons: GO, Shuffle hand, Discard
     * [ ] Message line ("Not a word!", "You deal 12", "Enemy hits for 6")
     * [ ] Win / Lose overlay -> click returns to MainMenuState
   * [ ] Gameplay
     * [ ] Basic letter/word gameplay
-      * [ ] Basic letter selection + removal
-        * [ ] Click hand tile -> moves to work area; click work-area tile -> returns to hand
+      * [x] Basic letter selection + removal
+        * [x] Click hand tile -> moves to work area; click work-area tile -> returns to hand
       * [ ] Hand shuffle (reorders hand only; free, no turn cost)
       * [ ] Discard letters (selected tiles go to discard, redraw; costs the turn)
       * [ ] Go!

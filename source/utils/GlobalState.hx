@@ -25,12 +25,12 @@ class GlobalState extends FlxBasic
 		emitter = new CsEmitter();
 
 		var lettersData = Assets.getText("assets/data/letters.json");
-		var lettersObj:Map<String, LetterData> = haxe.Json.parse(lettersData);
+		var lettersObj:Dynamic = haxe.Json.parse(lettersData);
 		var userLetters:Array<LetterDetails> = [];
-		for (letter in lettersObj.keys())
+		for (letter in Reflect.fields(lettersObj))
 		{
 			var data:LetterData = Reflect.field(lettersObj, letter);
-			for (i in 0...lettersObj[letter].initialCount)
+			for (i in 0...data.initialCount)
 			{
 				userLetters.push(new LetterDetails(letter, data.points));
 			}
@@ -38,7 +38,8 @@ class GlobalState extends FlxBasic
 
 		playerDetails = new PlayerDetails("Player", 25, 25, userLetters);
 		dictionary = new Map<String, Bool>();
-		for (word in Assets.getText("assets/data/words.txt").split("\n"))
+		var words:Array<String> = haxe.Json.parse(Assets.getText("assets/data/words.json"));
+		for (word in words)
 		{
 			dictionary.set(word, true);
 		}
